@@ -1,0 +1,61 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "build/**",
+        "dist/**",
+        "lib/**",
+        ".next/**",
+        ".docusaurus/**",
+        "types/web3/**",
+        "types/ethers/**",
+        "artifacts/**",
+        "typechain/**",
+        "src/artifacts/**",
+        "src/typechain/**",
+        "docs/web3-redux-reference/**"
+      ]
+    },
+    "build-storybook": {
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "storybook-static/**"
+      ]
+    },
+    "storybook": {
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": false
+    },
+    "dev": {
+      "cache": false
+    },
+    "start": {
+      "cache": false
+    },
+    "deploy": {
+      "cache": false
+    },
+    "test": {
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "lint": {
+      "outputs": []
+    },
+    "lint:fix": {
+      "outputs": []
+    },
+    "lint:staged": {
+      "outputs": []
+    }
+  }
+}

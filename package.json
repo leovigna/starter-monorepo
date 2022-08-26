@@ -1,0 +1,46 @@
+{
+  "name": "@leovigna/workspace",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Monorepo",
+  "keywords": [
+    "pnpm",
+    "workspace"
+  ],
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "submodules/*"
+  ],
+  "license": "MIT",
+  "author": "Leo Vigna",
+  "scripts": {
+    "build": "turbo run build",
+    "build-storybook": "turbo run build-storybook",
+    "storybook": "turbo run storybook",
+    "dev": "turbo run dev",
+    "start": "turbo run start",
+    "clean": "turbo run clean",
+    "clean:node_modules": "rimraf node_modules */**/node_modules",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "lint:staged": "turbo run lint:staged",
+    "husky:install": "husky install"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.21.1",
+    "@owlprotocol/eslint-config": "workspace:*",
+    "cross-env": "^7.0.3",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.1.2",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "turbo": "latest"
+  },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.0.0"
+  },
+  "packageManager": "pnpm@7.6.0"
+}
