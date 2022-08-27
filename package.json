@@ -26,6 +26,7 @@
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
     "lint:staged": "turbo run lint:staged",
+    "madge": "turbo run madge",
     "husky:install": "husky install"
   },
   "devDependencies": {
