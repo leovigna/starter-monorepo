@@ -1,6 +1,6 @@
-import { NAME } from './utils/environment';
-import hello from './hello';
-import sleep from './utils/sleep';
+import { NAME } from './utils/environment.js';
+import { hello } from './hello.js';
+import { sleep } from './utils/sleep.js';
 
 async function main() {
     while (true) {

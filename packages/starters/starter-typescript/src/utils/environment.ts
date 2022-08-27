@@ -1,5 +1,5 @@
-import path from 'path';
 import dotenv from 'dotenv';
+import path from 'path';
 // Process environment variables
 
 export const NODE_ENV = process.env.NODE_ENV;

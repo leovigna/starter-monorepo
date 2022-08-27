@@ -60,8 +60,8 @@
     "prepublishOnly": "pnpm run test",
     "publish": "pnpm publish --no-git-checks --access public",
     "madge": "madge src/index.ts -c",
-    "lint": "eslint src",
-    "lint:fix": "eslint src --fix",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
     "lint:staged": "lint-staged"
   },
   "devDependencies": {

@@ -1,5 +1,5 @@
 import { assert } from 'chai';
-import { NAME } from './utils/environment';
+import { NAME } from './utils/environment.js';
 import hello from './hello';
 
 describe('hello', function () {
